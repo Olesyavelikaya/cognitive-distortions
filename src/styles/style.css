@@ -85,13 +85,13 @@ html,
 body {
   box-sizing: border-box;
 
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   overflow-x: hidden;
 
   height: 100vh;
-  width: 100vw;
+  width: 1440px;
 
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -141,8 +141,8 @@ body {
 .header-img {
   position: absolute;
   height: 525px;
-  top: 40px;
-  right: 80px;
+  top: 38px;
+  left: 451px;
 }
 
 .og {
@@ -233,13 +233,13 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
   gap: 30px;
 }
 
 .card {
-  width: 350px;
+  width: 330px;
   height: 334px;
   padding: 24px;
   margin: 0;
