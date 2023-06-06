@@ -185,8 +185,6 @@ p {
   position: absolute;
   z-index: 3;
   display: block;
-  width: 100px;
-  height: 25px;
 
   background-color: var(--primary);
   color: var(--white);
@@ -211,7 +209,9 @@ p {
 }
 
 .section-video {
+  display: block;
   text-align: center;
+  padding: 100px 0;
 }
 
 .svp {
@@ -227,7 +227,7 @@ p {
 
 /* CARD */
 .cognitive-biases {
-  padding-top: 150px;
+  padding-top: 140px;
 
   background-color: var(--primary-dark);
 }
@@ -784,7 +784,7 @@ p {
 .btn-footer {
   position: relative;
 
-  height: 54px;
+  height: 34px;
   width: 64px;
 
   background-color: var(--primary);
