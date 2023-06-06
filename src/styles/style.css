@@ -85,13 +85,13 @@ html,
 body {
   box-sizing: border-box;
 
-  margin: 0;
+  margin: auto;
   padding: 0;
 
   overflow-x: hidden;
 
   height: 100vh;
-  width: 100vw;
+  width: 1440px;
 
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -127,7 +127,7 @@ body {
 
 .header-content {
   max-width: 1110px;
-  min-height: 914px;
+  min-height: 900px;
 
   margin: auto;
 }
@@ -141,8 +141,8 @@ body {
 .header-img {
   position: absolute;
   height: 525px;
-  top: 40px;
-  right: 80px;
+  top: 38px;
+  left: 451px;
 }
 
 .og {
@@ -233,13 +233,14 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 50px;
+  margin-right: 50px;
   gap: 30px;
 }
 
 .card {
-  width: 350px;
+  width: 330px;
+  height: 334px;
   padding: 24px;
   margin: 0;
   background-color: var(--light);
@@ -267,10 +268,11 @@ p {
   background-color: var(--primary-dark);
 
   border: none;
+  width: 340px;
 }
 
 .tx-card {
-  font: 18px/26px;
+  font: 16px/26px;
   display: flex;
   align-items: flex-end;
   margin-top: 20px;
@@ -735,8 +737,8 @@ p {
 .btn-footer {
   position: relative;
 
-  height: 52px;
-  width: 70px;
+  height: 54px;
+  width: 64px;
 
   background-color: var(--primary);
   border: none;
@@ -799,7 +801,7 @@ p {
   margin-bottom: 16px;
 }
 
-@media (max-width: 1440px) {
+/* @media (max-width: 1440px) {
   .header-img {
     top: 35px;
     right: -160px;
@@ -814,4 +816,4 @@ p {
   .container-card {
     margin: 0 auto;
   }
-}
+} */
