@@ -85,13 +85,13 @@ html,
 body {
   box-sizing: border-box;
 
-  margin: auto;
+  margin: 0;
   padding: 0;
 
   overflow-x: hidden;
 
   height: 100vh;
-  width: 1440px;
+  width: 100vw;
 
   font-family: "Open Sans", sans-serif;
   font-weight: 400;
@@ -127,7 +127,7 @@ body {
 
 .header-content {
   max-width: 1110px;
-  min-height: 900px;
+  min-height: 914px;
 
   margin: auto;
 }
@@ -141,8 +141,8 @@ body {
 .header-img {
   position: absolute;
   height: 525px;
-  top: 38px;
-  left: 451px;
+  top: 40px;
+  right: 80px;
 }
 
 .og {
@@ -233,14 +233,13 @@ p {
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
+  margin-left: 150px;
+  margin-right: 150px;
   gap: 30px;
 }
 
 .card {
-  width: 330px;
-  height: 334px;
+  width: 350px;
   padding: 24px;
   margin: 0;
   background-color: var(--light);
@@ -271,7 +270,7 @@ p {
 }
 
 .tx-card {
-  font: 16px/26px;
+  font: 18px/26px;
   display: flex;
   align-items: flex-end;
   margin-top: 20px;
@@ -729,13 +728,15 @@ p {
   padding: 15px;
 
   background-color: #fff;
+
+  border: 1px solid white;
 }
 
 .btn-footer {
   position: relative;
 
-  height: 54px;
-  width: 64px;
+  height: 52px;
+  width: 70px;
 
   background-color: var(--primary);
   border: none;
@@ -796,4 +797,21 @@ p {
 
 .ml {
   margin-bottom: 16px;
+}
+
+@media (max-width: 1440px) {
+  .header-img {
+    top: 35px;
+    right: -160px;
+  }
+
+  .card {
+    width: 340px;
+    padding-bottom: 10px;
+    padding-right: 8px;
+  }
+
+  .container-card {
+    margin: 0 auto;
+  }
 }
