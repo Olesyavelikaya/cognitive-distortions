@@ -100,6 +100,10 @@ body {
   color: var(--dark);
 }
 
+* {
+  box-sizing: border-box;
+}
+
 /* <!---Header--> */
 
 .back-image {
@@ -135,14 +139,14 @@ body {
 .header-name {
   position: relative;
   z-index: 2;
-  padding-top: 100px;
+  padding-top: 105px;
 }
 
 .header-img {
   position: absolute;
   height: 525px;
-  top: 38px;
-  left: 451px;
+  top: 52px;
+  left: 460px;
 }
 
 .og {
@@ -222,66 +226,109 @@ p {
 }
 
 /* CARD */
-#navigation {
+.cognitive-biases {
+  padding-top: 150px;
+
   background-color: var(--primary-dark);
-  padding-top: 180px;
 }
 
-.container-card {
-  position: relative;
+.cognitive-biases-list {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
-  justify-content: center;
-  margin-left: 50px;
-  margin-right: 50px;
-  gap: 30px;
+  justify-content: space-between;
+  padding-left: 0;
+
+  list-style-type: none;
 }
 
-.card {
-  width: 330px;
-  height: 334px;
+.cognitive-biases-item {
+  width: 350px;
+  margin-top: 20px;
   padding: 24px;
-  margin: 0;
+
   background-color: var(--light);
 }
 
-.cr {
-  line-height: 120%;
+.cognitive-biases-link {
+  text-decoration: none;
 }
 
-.number {
-  font-family: "Neucha", cursive;
-  font-size: 64px;
-  line-height: 70px;
-  margin-bottom: 40px;
-  display: flex;
-  align-items: flex-end;
+.white-color {
+  color: var(--white);
 }
 
-#text-card {
-  font-family: "Neucha", cursive;
-  font-weight: 400;
-  font-size: 52px;
-  line-height: 120%;
+.cognitive-biases-item-description {
+  padding: 0;
 
   background-color: var(--primary-dark);
-
-  border: none;
-  width: 340px;
 }
 
-.tx-card {
-  font: 16px/26px;
-  display: flex;
-  align-items: flex-end;
-  margin-top: 20px;
+.cognitive-biases-list-description {
+  font-weight: 400;
+  font-size: 52px;
 }
 
-.navigator a:hover,
-.navigator a:hover h3 {
+.cognitive-biases-item-count {
+  margin-bottom: 40px;
+
+  color: var(--primary-dark);
+  font-size: 64px;
+  font-family: "Neucha", cursive;
+  line-height: 1;
+}
+
+.cognitive-biases-title {
+  margin-bottom: 16px;
+
+  color: var(--primary);
+  font-weight: 400;
+}
+
+.cognitive-biases-description {
+  color: var(--dark);
+  font-weight: 400;
+  text-transform: inherit;
+}
+
+.cognitive-biases-item:not(:first-child):hover {
   background-color: var(--primary);
-  color: var(--light);
+}
+
+.cognitive-biases-item:not(:first-child):hover .cognitive-biases-item-count {
+  color: var(--white);
+}
+
+.cognitive-biases-item:not(:first-child):hover .cognitive-biases-title {
+  color: var(--white);
+}
+
+.cognitive-biases-item:not(:first-child):hover .cognitive-biases-description {
+  color: var(--white);
+}
+
+.card {
+  position: relative;
+  z-index: -2;
+}
+
+.card-dark {
+  background-color: var(--brown);
+}
+
+.card-light {
+  background-color: var(--light);
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 90px;
+}
+
+.card-image {
+  vertical-align: middle;
+
+  filter: drop-shadow(0 16px 32px rgba(0, 0, 0, 0.15));
 }
 
 /* Effect-IKEA */
